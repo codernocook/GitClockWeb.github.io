@@ -9,10 +9,6 @@ function displayTime(){
         session.innerHTML = 'AM';
     }
 
-    if(hrs > 12){
-        hrs = hrs - 12;
-    }
-
     document.getElementById('hours').innerHTML = hrs;
     document.getElementById('minutes').innerHTML = dateTime.getMinutes();
     document.getElementById('seconds').innerHTML = dateTime.getSeconds();
