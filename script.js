@@ -1,8 +1,6 @@
 function displayTime(){
     var dateTime = new Date();
     var hrs = dateTime.getHours();
-    var min = dateTime.getMinutes();
-    var sec = dateTime.getSeconds();
     var session = document.getElementById('session');
 
     if(hrs >= 12){
@@ -16,7 +14,7 @@ function displayTime(){
     }
 
     document.getElementById('hours').innerHTML = hrs;
-    document.getElementById('minutes').innerHTML = min;
-    document.getElementById('seconds').innerHTML = sec;
+    document.getElementById('minutes').innerHTML = dateTime.getMinutes();
+    document.getElementById('seconds').innerHTML = dateTime.getSeconds();
 }
 setInterval(displayTime, 10);
